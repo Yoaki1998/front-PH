@@ -19,13 +19,10 @@ jobs:
         node-version: 16
         cache: 'npm'
 
-    - name: npm install + npm test + npm build
+    - name: npm install + npm build
       run: |
-        node -v
-        npm -v
         npm install
         npm run build 
-        npm test
 
     
     - name: S3 sync
