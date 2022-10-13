@@ -15,8 +15,8 @@ jobs:
 
     - name: Setup node.js environement
       uses : actions/setup-node@v3
-        with:
-          cache: 'npm'
+      with:
+        cache: 'npm'
 
     - name: npm install + npm test + npm build
       run:
